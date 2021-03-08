@@ -56,5 +56,6 @@ nav[5].textContent = siteContent.nav['nav-item-6'];
 
 // CTA
 
-// const ctaImg = document.getElementById('#cta-img');
-// ctaImg.setAttribute = siteContent['cta']['img-src'];
+const cta = document.querySelector('.cta-text');
+const ctaButton = cta.querySelector("button");
+ctaButton.textContent = siteContent.cta.h1;
