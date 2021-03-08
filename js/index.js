@@ -42,8 +42,6 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-// const ctaImg = document.getElementById('#cta-img');
-// ctaImg.src = siteContent['cta']['img-src'];
 
 // Navigation manipulation
 const nav = document.querySelectorAll('nav a');
@@ -63,6 +61,9 @@ ctaButton.textContent = siteContent.cta.button;
 
 const ctaH1 = cta.querySelector('h1');
 ctaH1.textContent = siteContent.cta.h1;
+
+const ctaImg = cta.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 
 // Main Content Headers
@@ -86,12 +87,23 @@ pContent[3].textContent = siteContent['main-content']['product-content'];
 pContent[4].textContent = siteContent['main-content']['vision-content'];
 
 
+//  Contact Section
+
+const h4Contact = document.querySelectorAll('h4');
+const contact = document.querySelectorAll('p');
+
+h4Contact[5].textContent = siteContent['contact']['contact-h4'];
+
+contact[5].textContent = siteContent['contact']['address'];
+contact[6].textContent = siteContent['contact']['phone'];
+contact[7].textContent = siteContent['contact']['email'];
 
 
 
+const footer = document.querySelector('footer');
+const footerCopyR = footer.querySelector('p')
 
-
-
+footerCopyR.textContent = siteContent['footer']['copyright'];
 
 
 
@@ -120,3 +132,12 @@ pContent[4].textContent = siteContent['main-content']['vision-content'];
 // content[7].setAttribute('p', siteContent['main-content']['features-content']);
 
 
+// const h4Contact = document.querySelectorAll('h4');
+// const contact = document.getElementsByClassName('contact');
+// const contactP = contact.querySelectorAll('p');
+
+// h4Contact[5].textContent = siteContent['contact']['contact-h4'];
+
+// contactP[0].textContent = siteContent['contact']['address'];
+// contactP[1].textContent = siteContent['contact']['phone'];
+// contactP[2].textContent = siteContent['contact']['email'];
