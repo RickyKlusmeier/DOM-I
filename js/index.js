@@ -57,5 +57,58 @@ nav[5].textContent = siteContent.nav['nav-item-6'];
 // CTA
 
 const cta = document.querySelector('.cta-text');
+
 const ctaButton = cta.querySelector("button");
-ctaButton.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+
+const ctaH1 = cta.querySelector('h1');
+ctaH1.textContent = siteContent.cta.h1;
+
+
+// Main Content Headers
+
+const h4Headers = document.querySelectorAll('h4');
+
+h4Headers[0].textContent = siteContent['main-content']['features-h4'];
+h4Headers[1].textContent = siteContent['main-content']['about-h4'];
+h4Headers[2].textContent = siteContent['main-content']['services-h4'];
+h4Headers[3].textContent = siteContent['main-content']['product-h4'];
+h4Headers[4].textContent = siteContent['main-content']['vision-h4'];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Things I tried that didn't work
+
+// const content = document.querySelectorAll('div');
+
+
+// content[0].setAttribute('h4' , siteContent['main-content']['features-h4']);
+// content[1].setAttribute('p', siteContent['main-content']['features-content']);
+// content[2].setAttribute('h4' , siteContent['main-content']['features-h4']);
+// content[3].setAttribute('p', siteContent['main-content']['features-content']);
+// content[4].setAttribute('h4' , siteContent['main-content']['features-h4']);
+// content[5].setAttribute('p', siteContent['main-content']['features-content']);
+// content[6].setAttribute('h4' , siteContent['main-content']['features-h4']);
+// content[7].setAttribute('p', siteContent['main-content']['features-content']);
+
+
