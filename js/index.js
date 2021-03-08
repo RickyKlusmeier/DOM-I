@@ -52,6 +52,20 @@ nav[3].textContent = siteContent.nav['nav-item-4'];
 nav[4].textContent = siteContent.nav['nav-item-5'];
 nav[5].textContent = siteContent.nav['nav-item-6'];
 
+
+
+const blogLink = document.createElement('a');
+blogLink.textContent = 'Blog';
+blogLink.href = '#';
+document.querySelector('nav').appendChild(blogLink);
+
+const linkToNothing = document.createElement('a');
+linkToNothing.textContent = 'Where Does This Go??';
+linkToNothing.href = '#';
+document.querySelector('nav').prepend(linkToNothing);
+
+const anc = document.querySelectorAll('a');
+anc.forEach(anc => (anc.style.color = 'green'));
 // CTA
 
 const cta = document.querySelector('.cta-text');
@@ -62,7 +76,7 @@ ctaButton.textContent = siteContent.cta.button;
 const ctaH1 = cta.querySelector('h1');
 ctaH1.textContent = siteContent.cta.h1;
 
-const ctaImg = cta.getElementById('cta-img');
+const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 
@@ -86,6 +100,10 @@ pContent[2].textContent = siteContent['main-content']['services-content'];
 pContent[3].textContent = siteContent['main-content']['product-content'];
 pContent[4].textContent = siteContent['main-content']['vision-content'];
 
+// Main Content Image
+
+const midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 //  Contact Section
 
